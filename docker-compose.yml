@@ -1,0 +1,15 @@
+version: '3'
+services:
+  strongswan:
+    image: ustiuzhanin/strongswan
+    privileged: true
+    ports:
+      - 500:500/udp
+      - 4500:4500/udp
+    volumes:
+     - cacerts:/etc/ipsec.d/cacerts
+     - private:/etc/ipsec.d/private
+     - certs:/etc/ipsec.d/certs
+     - ipsec.conf:/etc/ipsec.conf
+     - ipsec.secrets:/etc/ipsec.secrets
+     - strongswan.conf:/etc/strongswan.conf
