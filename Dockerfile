@@ -45,7 +45,7 @@ RUN cd /tmp/strongswan \
             --disable-rc2 \
             --disable-sha1 \
             --disable-sha2 \
-            --disable-static && \
+            --disable-static \
       	    --enable-sql \
       	    --enable-mysql \
       	    --enable-sqlite \
