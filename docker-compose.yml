@@ -13,3 +13,5 @@ services:
      - ipsec.conf:/etc/ipsec.conf
      - ipsec.secrets:/etc/ipsec.secrets
      - strongswan.conf:/etc/strongswan.conf
+     - config_ssl.sh:/etc/config_ssl.sh
+     - generate-mobileconfig.py:/etc/generate-mobileconfig.py
