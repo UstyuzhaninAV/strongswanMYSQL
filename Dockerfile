@@ -2,7 +2,7 @@
 
 #RUN apt-get update && apt-get install -y strongswan libstrongswan libgmp-dev kmod && apt-get upgrade -y
 
-FROM buildpack-deps:xenial
+FROM buildpack-deps:buster
 
 RUN apt-get update && apt-get install -y haveged libgmp-dev module-init-tools netcat && apt-get upgrade -y
 
