@@ -1,0 +1,6 @@
+cacerts/
+certs/
+private/
+ipsec.conf
+ipsec.secrets
+strongswan.conf
