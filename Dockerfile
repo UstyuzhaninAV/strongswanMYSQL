@@ -21,11 +21,12 @@ RUN cd /tmp/strongswan \
 			&& make \
 			&& make install \
 			&& rm -rf "/tmp/strongswan*"
-			
+
 ADD ipsec.conf /etc/ipsec.conf
 ADD ipsec.secrets /etc/ipsec.secrets
-
+ADD strongswan.conf /etc/strongswan.conf
 ADD ./cacerts /etc/ipsec.d/cacerts
 ADD ./certs /etc/ipsec.d/certs
 ADD ./private /etc/ipsec.d/private
 EXPOSE 4500/udp 500/udp
+CMD ipsec start --nofork
