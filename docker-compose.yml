@@ -7,11 +7,11 @@ services:
       - 500:500/udp
       - 4500:4500/udp
     volumes:
-     - cacerts:/etc/ipsec.d/cacerts
-     - private:/etc/ipsec.d/private
-     - certs:/etc/ipsec.d/certs
-     - ipsec.conf:/etc/ipsec.conf
-     - ipsec.secrets:/etc/ipsec.secrets
-     - strongswan.conf:/etc/strongswan.conf
-     - config_ssl.sh:/etc/config_ssl.sh
-     - generate-mobileconfig.py:/etc/generate-mobileconfig.py
+     - ./cacerts:/etc/ipsec.d/cacerts
+     - ./private:/etc/ipsec.d/private
+     - ./certs:/etc/ipsec.d/certs
+     - ./ipsec.conf:/etc/ipsec.conf
+     - ./ipsec.secrets:/etc/ipsec.secrets
+     - ./strongswan.conf:/etc/strongswan.conf
+     - ./config_ssl.sh:/etc/config_ssl.sh
+     - ./generate-mobileconfig.py:/etc/generate-mobileconfig.py
